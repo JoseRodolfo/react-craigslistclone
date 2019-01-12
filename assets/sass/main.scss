@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import "reset";
+@import "home";
+@import "listings";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  // background: purple;
+  background-image: linear-gradient(135deg, rgba(52,78,247,.4) 0%, rgba(152,12,245,.4) 100%), url("https://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1444253482/DG2015-san-francisco.jpg?itok=MdRJm2Zo");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+
+  .fas {
+    margin-left: 5px;
+  }
+
+  .left-menu {
+    display: flex;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-right: 20px;
+      font-size: 2rem;
+    }
+
+    .city {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .right-menu {
+    display: flex;
+
+    .user-dropdown,
+    .user-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 20px;
+    }
+
+    .post-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 20px;
+      background-color: blue;
+      color: rgb(119, 196, 255);
+      font-weight: 300;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    text-transform: capitalize;
+    color:white;
+    font-weight: 400;
+    margin: 100px 0px;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    opacity: .5;
+    color: white;
+
+    .categories {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+
+      .title {
+         // text-align: center;
+         margin-bottom: 1rem;
+         font-size: 1.2rem;
+         font-weight: 700;
+      }
+
+      .link-section {
+        display: flex;
+
+        .link{
+          text-decoration: none;
+          color: white;
+          margin-bottom: .5rem;
+          font-size: .8rem;
+          font-weight: 300;
+          &:hover{
+            color: purple;
+          }
+        }
+
+        .link-section-left {
+          display: flex;
+          flex-direction: column;
+          padding-right: 5px;
+          margin: 0px 5px 5px 0px;
+
+        }
+
+        .link-section-right {
+          display: flex;
+          flex-direction: column;
+          margin: 0px 0px 5px 5px;
+
+        }
+      }
+    }
+  }
+}
+
+
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+}
